@@ -7,29 +7,30 @@ A Claude skill that imports John Meadows (Mountain Dog) training programs from a
 - Sets, reps, warm-ups, drop sets and supersets mapped to Hevy's set fields
 - Asks before creating folders or custom exercises and before changing existing routines, and checks for duplicates first
 
-## Requirements
+## What you need
 
-- A Claude account with Skills enabled
-- The **Hevy** connector connected in Claude, so Claude can read and write your routines
+- A Claude account (claude.ai or the Claude desktop app)
+- A Hevy account
 - Your Meadows program PDF
 
-## Install
+## Setup (one time)
 
-**Claude.ai / Claude desktop app**
+**1. Download the skill**
 
-1. Download [`john-meadows-hevy.skill`](john-meadows-hevy.skill) from this repo.
-2. In Claude, go to **Settings → Capabilities → Skills**.
-3. Click **Upload skill** and choose the file you downloaded.
-4. Turn the skill on.
+Click [`john-meadows-hevy.skill`](john-meadows-hevy.skill), then click the **download** button (the ↓ arrow near the top right of the file view). Keep the file as it is. Don't unzip it.
 
-**Claude Code**
+**2. Add it to Claude**
 
-Copy the `john-meadows-hevy` folder into `~/.claude/skills/`:
+1. In Claude, open **Settings → Capabilities**.
+2. Make sure **Code execution and file creation** is turned on.
+3. Under **Skills**, click **Upload skill** and choose the file you downloaded.
+4. Turn on the switch next to **john-meadows-hevy**.
 
-```bash
-git clone https://github.com/rajlamgaday/john-meadows-hevy-skill.git
-cp -r john-meadows-hevy-skill/john-meadows-hevy ~/.claude/skills/
-```
+**3. Connect Hevy**
+
+1. In Claude, open **Settings → Connectors**.
+2. Find **Hevy** and click **Connect**.
+3. Sign in to Hevy and allow access.
 
 ## Use
 
